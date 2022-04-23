@@ -1,0 +1,15 @@
+php -S localhost:8000/decisiones.php
+php -s localhost:8000
+
+
+
+PS C:\xampp\htdocs\walterphp> cd .\decisiones\ 
+PS C:\xampp\htdocs\walterphp\decisiones> php -S localhost:8000/decisiones.php
+Invalid address: localhost:8000/decisiones.php
+PS C:\xampp\htdocs\walterphp\decisiones> php -S localhost:8000/decisiones.php
+Invalid address: localhost:8000/decisiones.php
+PS C:\xampp\htdocs\walterphp\decisiones> php -S localhost:8000/decisiones.php
+Invalid address: localhost:8000/decisiones.php
+PS C:\xampp\htdocs\walterphp\decisiones> php -S localhost:8000/decisiones.php
+Invalid address: localhost:8000/decisiones.php
+PS C:\xampp\htdocs\walterphp\decisiones> php -S localhost:8000   
