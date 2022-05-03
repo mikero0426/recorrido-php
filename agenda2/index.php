@@ -73,7 +73,8 @@
               <th scope="col">ID</th>
               <th scope="col">NOMBRE</th>
               <th scope="col">APELLIDOS</th>
-              <th scope="col">APELLIDOS</th>
+              <th scope="col">EMail</th>
+              <th scope="col">TELEFONO</th>
               <th scope="col">MOVIL</th>
             </tr>
           </thead>
@@ -86,27 +87,27 @@
             //javascript: fetch y jsons
             //reac o vuejs o angular
             foreach ($resultado as $datos) {
-              echo '
+              ?>
             <tr>
-             <td>' . $datos[0] . '</td>
-             <td>' . $datos[1] . '</td>
-             <td>' . $datos[2] . '</td>
-             <td>' . $datos[4] . '</td>
-             <td>' . $datos[5] . '</td>
-             <td><button type="button" class="btn btn-info"><i class="bi bi-pencil-square"></i></button> </td>
-             <td><button type="button" class="btn btn-danger" action" action="./crud/eliminarContactos.php"><i class="bi bi-trash"></i></button> </td>
+             <td><?php echo $datos->Id ?> </td>
+             <td><?php echo $datos->nombre ?></td>
+             <td><?php echo $datos->Apellido ?> </td>
+             <td><?php echo $datos->Email ?> </td>
+             <td><?php echo $datos->Telefono ?> </td>
+             <td><?php echo $datos->Movil ?> </td>
+             <td> <a  href="frmEditar.php?id=<?php echo $datos->Id;?>" type="button" class="btn btn-info"  class="bi bi-pencil-square"><i class="bi bi-pencil-square"> </i></a> </td>
+             <td> <a type="button" class="btn btn-danger" href="crud/eliminarContactos.php?id=<?php echo $datos->Id;?>"><i class="bi bi-trash"></i></a> </td>
 
-
+             <!-- <a  href="frmEditar.php?id=<?php //echo $datos->id;?>" -->
             
             
             </tr>
             
             
-            ';
-            }
+          <?php  }; ?>
 
 
-            ?>
+            
           </tbody>
         </table>
 
